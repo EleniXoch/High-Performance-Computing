@@ -1,1 +1,27 @@
 
+
+
+--Convolution Filter Implementation--
+
+Project 4)
+
+working on previous double type data and padding implementation
+
+further optimizations including: 
+	-constant memory
+	-registers
+
+-keeping time measurements for comparison of versions
+-analyzing usability of each load and memory load impact on program
+-commenting on program memory limits
+
+NEW: 
+
+Supporting bigger images:
+	-tiling 
+	-different kernel launches
+
+utilizing streams:
+	-parallel execution
+	-profile to validate performance results
+	-nvprof results
