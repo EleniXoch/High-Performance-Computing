@@ -21,5 +21,5 @@ Different versions of code:
 
 	2) simple implementation
 	4) experimenting with grid, block sizes
-	6) double effects on accuracy
+	6) double type data, effects on accuracy
 	8) padding as cure to divergence
