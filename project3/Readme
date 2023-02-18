@@ -8,18 +8,18 @@ Project 3)
 
 program runs in CPU too in order to validate and compare GPU results
 
-Summary:
-	-allocate memory for CPU(malloc), cudaMalloc
-	-cudaMemcpy HostToDevice to d_Filter and d_input
-	-measuring execution time of the two kernels using cudaEventCreate, cudaEventRecord
-	-cudaMemcpy DevicetoHost
-	-measure difference between execution and accuracy
-	-free all the allocated memory for CPU(free), cudaFree
-
-
 Different versions of code: 
 
 	2) simple implementation
 	4) experimenting with grid, block sizes
 	6) double type data, effects on accuracy
 	8) padding as cure to divergence
+
+
+Step summary:
+	-allocate memory for CPU(malloc), cudaMalloc
+	-cudaMemcpy HostToDevice to d_Filter and d_input
+	-measuring execution time of the two kernels using cudaEventCreate, cudaEventRecord
+	-cudaMemcpy DevicetoHost
+	-measure difference between execution and accuracy
+	-free all the allocated memory for CPU(free), cudaFree
