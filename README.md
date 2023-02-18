@@ -7,4 +7,5 @@ Project code, description, reports and time stats are provided.
 
 Implemetations on:
   -Convolution Filter(2 parts)
+  
   -Equalizing Histogram
