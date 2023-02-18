@@ -1,1 +1,20 @@
 
+--Histogram Equalization--
+
+Project 5)
+
+Functions for implementation: 
+  -calculate histogram
+  -calculate CDF
+  -calculate Look Up Table
+  -equalize histogram
+  
+
+Techniques\ideas researched: 
+
+	-atomicAdd to avoid race conditions
+	-dividing histogram creation process and use multiple streams
+	-parallel scan Brent - Kung
+	-shared memory for CreateCDF 
+	-Cudamallocmanaged not prefered
+	-experimenting with different num threads, block and grid dimension
