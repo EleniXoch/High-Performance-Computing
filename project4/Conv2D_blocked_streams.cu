@@ -304,8 +304,8 @@ int main(int argc, char **argv) {
 		checkErr(cudaMemcpyAsync(d_Input1, h_small_pic1, PICS_SIZE_PADDED * PICS_SIZE_PADDED * sizeof(double), cudaMemcpyHostToDevice,stream1));
 
 		//Compute the rows 
-		RowGPU <<<grid_dim, block_dim, 0, stream0 >> > (d_Buffer0, d_Input0, PICS_SIZE, PICS_SIZE, filter_radius);
-		RowGPU <<<grid_dim, block_dim, 0, stream1 >> > (d_Buffer1, d_Input1, PICS_SIZE, PICS_SIZE, filter_radius);
+		RowGPU <<<grid_dim, block_dim, 0, stream0 >>> (d_Buffer0, d_Input0, PICS_SIZE, PICS_SIZE, filter_radius);
+		RowGPU <<<grid_dim, block_dim, 0, stream1 >>> (d_Buffer1, d_Input1, PICS_SIZE, PICS_SIZE, filter_radius);
 
 		//copy output to d_Buffer
 		checkErr(cudaMemcpyAsync(h_OutputGPU_pic0, d_Buffer0, PICS_SIZE_PADDED * PICS_SIZE_PADDED * sizeof(double), cudaMemcpyDeviceToHost, stream0));
